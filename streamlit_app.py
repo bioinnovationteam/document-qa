@@ -1,18 +1,3 @@
-
-app_code = r'''
-"""
-MedtechSandbox MVP
-A single-file Streamlit application for lean medtech startup planning.
-
-Run locally:
-    streamlit run app.py
-
-Deploy:
-    Push app.py + requirements.txt to GitHub and deploy on Streamlit Community Cloud.
-"""
-
-from __future__ import annotations
-
 import json
 import math
 from dataclasses import dataclass, asdict
@@ -1057,12 +1042,3 @@ elif module == "Export Workspace":
 
     st.subheader("Workspace Preview")
     st.json(workspace)
-'''
-
-requirements = """streamlit>=1.33
-pandas>=2.0
-numpy>=1.24
-"""
-
-
-print("Created /mnt/data/app.py and /mnt/data/requirements.txt")
