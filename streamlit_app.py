@@ -1,4 +1,3 @@
-from pathlib import Path
 
 app_code = r'''
 """
@@ -1065,7 +1064,5 @@ pandas>=2.0
 numpy>=1.24
 """
 
-Path("/mnt/data/app.py").write_text(app_code, encoding="utf-8")
-Path("/mnt/data/requirements.txt").write_text(requirements, encoding="utf-8")
 
 print("Created /mnt/data/app.py and /mnt/data/requirements.txt")
